@@ -17,6 +17,22 @@ def fuck(test, i):
 
 def burn():
 
+
+    for dirpath, dirnames, filenames in os.walk(folder):
+        for filename in [f for f in filenames if f.endswith(".png")]:
+            full_path = os.path.join(dirpath, filename)
+
+            
+            im1 = Image.open(full_path)
+            rgb_im1 = im1.convert('RGB')
+            newpath = full_path[:full_path.find('.')]
+            rgb_im1.save(newpath + '.jpg')
+
+            oldpng = full_path[:full_path.find('.')]
+            os.rename(full_path, oldpng + " saved.png")
+
+
+
     for dirpath, dirnames, filenames in os.walk(folder):
         for filename in [f for f in filenames if f.endswith(".jpg")]:
             full_path = os.path.join(dirpath, filename)
