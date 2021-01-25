@@ -3,22 +3,24 @@
 ## Kurulum - Linux
 
 ```bash
+cd rescuer
 sudo apt install python3-pip
 pip3 install fpdf
 pip3 install Pillow
-cd rescuer
-python3 rescuer.py *usage*
+python3 rescuer.py
+*usage*
 ```
 
 ## Kurulum - Windows
 
 ```bash
 install python
+cd rescuer
 python get-pip.py
 pip install fpdf
 pip install Pillow
-cd rescuer
-python3 rescuer.py *usage*
+python3 rescuer.py
+*usage*
 ```
 
 ## Kullanım
