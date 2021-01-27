@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#Shebang
+
 from fpdf import FPDF
 from PIL import Image
 import argparse
@@ -5,10 +8,10 @@ import os
 
 if not os.path.exists('output'):
     os.makedirs('output')
-    print('output file created')
+    print('output folder created')
 if not os.path.exists('input'):
     os.makedirs('input')
-    print('input file created')
+    print('input folder created')
 
 
 def fuck(test, i):
