@@ -1,27 +1,9 @@
 ![logo](logo.png) 
 
-## Kurulum - Linux
 
-```bash
-cd rescuer
-sudo apt install python3-pip
-pip3 install fpdf
-pip3 install Pillow
-python3 rescuer.py
-*usage*
-```
+- pip install fpdf
+- pip install Pillow
 
-## Kurulum - Windows
-
-```bash
-install python
-cd rescuer
-python get-pip.py
-pip install fpdf
-pip install Pillow
-python3 rescuer.py
-*usage*
-```
 
 ## Kullanım
 
